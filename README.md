@@ -108,9 +108,51 @@ PROCK needs to be run locally. Follow these steps to set it up:
    curl -X POST -F "ontology=@path/to/your/ontology.ttl" http://localhost:5000/error_checking/check_oops
    ```
 
+
 ## Project Structure
 
-[Project structure remains the same as in the previous version]
+```
+ontology-benchmark/
+│
+├── api/
+│   ├── __init__.py
+│   └── routes/
+│       ├── analysis_routes.py
+│       ├── document_routes.py
+│       ├── error_checking_routes.py
+│       └── ontology_routes.py
+│
+├── error_checking/
+│   ├── __init__.py
+│   ├── oops_checker.py
+│   └── prock_checker.py
+│
+├── models/
+│   ├── document_processor.py
+│   └── ontology_metrics.py
+│
+├── services/
+│   ├── document_processor.py
+│   ├── error_checker.py
+│   └── ontology_processor.py
+│
+├── utils/
+│   └── rdf_utils.py
+│
+├── app.py
+├── config.py
+├── extensions.py
+└── requirements.txt
+```
+
+- `app.py`: Main application file, creates and runs the Flask app
+- `config.py`: Configuration settings for the application
+- `extensions.py`: Flask extensions initialization
+- `api/`: Contains API routes and endpoint definitions
+- `error_checking/`: Implementations for PROCK and OOPS! error checkers
+- `models/`: Core logic for document processing and ontology metrics
+- `services/`: Service layer implementations
+- `utils/`: Utility functions for RDF processing
 
 ## Testing
 
