@@ -1,0 +1,32 @@
+# .gitignore
+
+# Ignore the actual .env file
+.env
+
+# Python-related files
+__pycache__/
+*.py[cod]
+*$py.class
+app_old.py
+.ipynb_checkpoints
+
+# Virtual environment
+venv/
+env/
+ENV/
+
+# Flask-related files
+instance/
+.webassets-cache
+
+# IDE-related files
+.vscode/
+.idea/
+
+# OS-related files
+.DS_Store
+Thumbs.db
+
+# Test Data Folder
+test_data
+app.log

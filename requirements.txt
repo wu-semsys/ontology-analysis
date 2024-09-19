@@ -1,0 +1,13 @@
+flask
+flask-restx
+flask-sqlalchemy
+rdflib
+python-dotenv
+requests
+werkzeug
+langchain
+xmltodict
+pypdf2
+tiktoken
+langchain-together
+ollama
