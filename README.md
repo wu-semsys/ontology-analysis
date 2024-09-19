@@ -112,7 +112,7 @@ PROCK needs to be run locally. Follow these steps to set it up:
 ## Project Structure
 
 ```
-ontology-benchmark/
+ontology-analysis/
 │
 ├── api/
 │   ├── __init__.py
