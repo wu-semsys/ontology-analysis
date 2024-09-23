@@ -48,22 +48,21 @@ This API offers functions for analyzing ontologies, extracting relevant metrics 
 OOPS! is a web service. Ensure it's accessible at https://oops.linkeddata.es/ before using the OOPS! error checking functionality.
 
 ### PROCK
-PROCK needs to be run locally. Follow these steps to set it up:
+The service for Defect checking with Prock's method needs to be run locally. Follow these steps to set it up:
 
 1. Clone the PROCK repository:
    ```
-   git clone [PROCK_GITHUB_REPO_URL] (This will be updated as soon as the repository is published.)
-   cd prock
+   git clone https://github.com/wu-semsys/ontology-defect-heuristics
+   cd ontology-defect-heuristics
    ```
-   Replace [PROCK_GITHUB_REPO_URL] with the actual GitHub URL for the PROCK repository.
 
-2. Follow the installation and running instructions in the PROCK repository's README.
+2. Follow the installation and running instructions in the ontology-defect-heuristics repository's README.
 
-3. Ensure PROCK is running and accessible at the endpoint specified in your `.env` file (default: http://localhost:8085/defectCandidates).
+3. Ensure ontology-defect-heuristics is running and accessible at the endpoint specified in your `.env` file (default: http://localhost:8085/defectCandidates).
 
 ## Usage
 
-1. Ensure PROCK is running locally and OOPS! service is accessible.
+1. Ensure PROCK (ontology-defect-heuristics) is running locally and OOPS! service is accessible.
 
 2. Start the Flask application:
    ```
