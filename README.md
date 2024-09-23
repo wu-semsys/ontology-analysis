@@ -1,6 +1,6 @@
 # Ontology Analysis API
 
-This API provides functionality to analyze ontologies, extract information from related PDF documents, and perform error checking. It uses OLLAMA for document processing and includes error checking tools like PROCK and OOPS!.
+This API offers functions for analyzing ontologies, extracting relevant metrics (class count, property count, etc.) and performing error checks. In addition, there is a local LLM functionality for extracting competency questions from PDF documents. 
 
 ## Prerequisites
 
@@ -52,7 +52,7 @@ PROCK needs to be run locally. Follow these steps to set it up:
 
 1. Clone the PROCK repository:
    ```
-   git clone [PROCK_GITHUB_REPO_URL]
+   git clone [PROCK_GITHUB_REPO_URL] (This will be updated as soon as the repository is published.)
    cd prock
    ```
    Replace [PROCK_GITHUB_REPO_URL] with the actual GitHub URL for the PROCK repository.
